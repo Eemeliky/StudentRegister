@@ -54,6 +54,7 @@ public class DesignatedCourse {
     }
 
     public String toStringStyleC() {
+        // toString without Locale.ROOT formatting
         return String.format(
                 "[course=[%s (%5.2f cr), \"%s\"." +
                         " %s, period: %d.], year=%d]",

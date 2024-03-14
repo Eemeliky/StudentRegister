@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
+        // EXAMPLE FUNCTION CALLS
+        // all personal IDs that are use in this example are test IDs (i.e. 900+ ending).
         ResponsibleTeacher respTeach = new ResponsibleTeacher("Mouse", "Mickey");
         respTeach.setBirthDate("090941-987F");
         MonthlyPayment salary = new MonthlyPayment();
@@ -55,7 +58,6 @@ public class Main {
         StudentCourse studCourse10 = new StudentCourse(course10, 'A', 2021);
         StudentCourse studCourse11 = new StudentCourse(course11, 'f', 2022);
 
-
         List<StudentCourse> bachelor =
                 new ArrayList<>(Arrays.asList(studCourse1, studCourse2, studCourse3, studCourse4, studCourse5));
         List<StudentCourse> master =
@@ -68,16 +70,17 @@ public class Main {
         stud1.setTitleOfThesis(1, "Masters thesis title");
         stud1.addCourses(ConstantValues.BACHELOR_TYPE, bachelor);
         stud1.addCourses(ConstantValues.MASTER_TYPE, master);
-        stud1.setstartYear(2001);
+        stud1.setStartYear(2001);
         stud1.setGraduationYear(2020);
-        stud1.printStudent();
         stud1.setBirthDate("010106A9610");
         stud1.setTitleOfThesis(ConstantValues.BACHELOR_TYPE, "Christmas - The most wonderful time of the year");
         stud1.setTitleOfThesis(ConstantValues.MASTER_TYPE,"Dreaming of a white Christmas");
         studCourse9.setGrade(3);
         stud1.setGraduationYear(2020);
         stud1.printStudent();
+        System.out.println("Degree information:");
         stud1.printDegrees();
+        System.out.println("All courses:");
         stud1.printCourses();
     }
 }

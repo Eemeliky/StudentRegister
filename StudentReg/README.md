@@ -1,4 +1,4 @@
-# Student Register
+# Student Register Package
 
   ```java
   package StudentReg;

@@ -31,14 +31,14 @@ public class Student extends Person {
         }
     }
 
-    public void setstartYear(final int startYear) {
+    public void setStartYear(final int startYear) {
         int currentYear = ConstantValues.getCurrentYear();
         if (ConstantValues.MIN_START_YEAR < startYear && startYear <= currentYear) {
             this.startYear = startYear;
         }
     }
 
-    public int getstartYear() {
+    public int getStartYear() {
         return startYear;
     }
 
