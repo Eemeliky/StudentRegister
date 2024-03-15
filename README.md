@@ -7,17 +7,17 @@ teacher**.
 
 ### Output of the main.java with example values:
 ```plaintext
-StudentRegister.Teacher id: OY_TEACHER_2926
+Teacher id: OY_TEACHER_2152
         First name: Mickey, Last name: Mouse
         Birthdate: 09.09.1941
         Salary: 756.85
-        StudentRegister.Teacher for courses:
-        StudentRegister.Teacher: [course=[223344A (50,50 cr), "More basic studies". Mandatory, period: 1.], year=2023]
-        StudentRegister.Teacher: [course=[556677A (50,00 cr), "Even more basic studies". Optional, period: 3.], year=2023]
-        StudentRegister.Teacher: [course=[666666S ( 8,00 cr), "Extra master studies". Optional, period: 5.], year=2022]
-        Responsible teacher: [course=[888888S (18,00 cr), "Final master studies". Mandatory, period: 5.], year=2023][course=[888888S (18,00 cr), "Final master studies". Mandatory, period: 5.], year=2023]
+        Teacher for courses:
+        Teacher: [course=[223344A (50,50 cr), "More basic studies". Mandatory, period: 1.], year=2023]
+        Teacher: [course=[556677A (50,00 cr), "Even more basic studies". Optional, period: 3.], year=2023]
+        Teacher: [course=[666666S ( 8,00 cr), "Extra master studies". Optional, period: 5.], year=2022]
+        Responsible teacher: [course=[888888S (18,00 cr), "Final master studies". Mandatory, period: 5.], year=2023]
 
-Teacher id: OY_ASSISTANT_2877
+Teacher id: OY_ASSISTANT_2733
         First name: Goofy, Last name: The Dog
         Birthdate: 17.03.1978
         Salary: 38.50
@@ -25,9 +25,9 @@ Teacher id: OY_ASSISTANT_2877
         [course=[223344A (50,50 cr), "More basic studies". Mandatory, period: 1.], year=2023]
         [course=[556677A (50,00 cr), "Even more basic studies". Optional, period: 3.], year=2023]
         [course=[666666S ( 8,00 cr), "Extra master studies". Optional, period: 5.], year=2022]
-        [course=[888888S (18,00 cr), "Final master studies". Mandatory, period: 5.], year=2023][course=[888888S (18,00 cr), "Final master studies". Mandatory, period: 5.], year=2023]
+        [course=[888888S (18,00 cr), "Final master studies". Mandatory, period: 5.], year=2023]
 
-Student id: 82
+Student id: 56
         First name: Donald, Last name: Duck
         Date of birth: 01.01.2006
         Status: The student has graduated in 2020

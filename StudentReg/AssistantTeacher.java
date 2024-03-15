@@ -45,10 +45,10 @@ public class AssistantTeacher extends Employee implements Payment, Teacher {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < courses.size(); i++) {
             sb.append(indent);
-            if (i == courses.size() - 1) {
-                sb.append(courses.get(i).toStringStyleC());
+            sb.append(courses.get(i).toStringStyleC());
+            if (i != courses.size() - 1) {
+                sb.append("\n");
             }
-            sb.append(courses.get(i).toStringStyleC()).append("\n");
         }
         return String.format(Locale.ROOT,
                             """
@@ -57,7 +57,8 @@ public class AssistantTeacher extends Employee implements Payment, Teacher {
                                     Birthdate: %s
                                     Salary: %5.2f
                                     Assistant for courses:
-                            %s""",
+                            %s
+                            """,
                 getIdString(), getFirstName(), getLastName(), getBirthDate(),
                 calculatePayment(), sb);
     }

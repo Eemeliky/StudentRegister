@@ -35,10 +35,10 @@ public class ResponsibleTeacher extends Employee implements Payment, Teacher {
                 preFix = "Responsible teacher: ";
             }
             sb.append(preFix);
-            if (i == courses.size() - 1) {
-                sb.append(courses.get(i).toString());
+            sb.append(courses.get(i).toString());
+            if (i != courses.size() - 1) {
+                sb.append("\n");
             }
-            sb.append(courses.get(i).toString()).append("\n");
         }
         return sb.toString();
     }
@@ -48,24 +48,25 @@ public class ResponsibleTeacher extends Employee implements Payment, Teacher {
         String indent = "        ";
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < courses.size(); i++) {
-            String preFix = "StudentRegister.Teacher: ";
+            String preFix = "Teacher: ";
             if (courses.get(i).isResponsible()) {
                 preFix = "Responsible teacher: ";
             }
             sb.append(indent).append(preFix);
-            if (i == courses.size() - 1) {
-                sb.append(courses.get(i).toStringStyleC());
+            sb.append(courses.get(i).toStringStyleC());
+            if (i != courses.size() - 1) {
+                sb.append("\n");
             }
-            sb.append(courses.get(i).toStringStyleC()).append("\n");
         }
         return String.format(Locale.ROOT,
                 """
-                StudentRegister.Teacher id: %s
+                Teacher id: %s
                         First name: %s, Last name: %s
                         Birthdate: %s
                         Salary: %5.2f
-                        StudentRegister.Teacher for courses:
-                %s""",
+                        Teacher for courses:
+                %s
+                """,
                 getIdString(), getFirstName(), getLastName(), getBirthDate(),
                 calculatePayment(), sb);
     }
